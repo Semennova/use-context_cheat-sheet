@@ -1,9 +1,12 @@
-import React from 'react'
-import { useTheme } from './ThemeContext'
+import React, { useContext } from 'react'
+import { ThemeContext, useTheme } from './ThemeContext'
 
 export default function FunctionalComponent() {
     const {darkTheme} = useTheme()
     const {toggleTheme} = useTheme()
+
+    // const { darkTheme } = useContext(ThemeContext)
+    // const { toggleTheme } = useContext(ThemeContext)
 
     const themeStyle = {
         width: '200px',
